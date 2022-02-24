@@ -8,7 +8,9 @@ for (let i = 0; i < 5; i++) {
     console.log('Computer selected: ' + computerChoice)
     return computerChoice
     }
+
     let PlayerSelection = prompt("Rock, Paper or Scissors?").toLowerCase();
+    
     if (PlayerSelection!= undefined && PlayerSelection === "paper", "scissors", "rock") {
         if (PlayerSelection === "rock" && computerPlay() === "scissors") {
             playerScore += 1
