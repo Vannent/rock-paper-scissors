@@ -33,6 +33,18 @@ for (let i = 0; i < 5; i++) {
         } else if (PlayerSelection === "scissors" && computerPlay() === "scissors") {
             alert("Draw!")
             console.log('Player selected: ', PlayerSelection);
+        } else if (PlayerSelection === "paper" && computerPlay() === "scissors") {
+            computerScore += 1
+            alert("You lost!")
+            console.log('Player selected: ', PlayerSelection);
+        } else if (PlayerSelection === "scissors" && computerPlay() === "rock") {
+            computerScore += 1
+            alert("You lost!")
+            console.log('Player selected: ', PlayerSelection);
+        } else if (PlayerSelection === "rock" && computerPlay() === "paper") {
+            computerScore += 1
+            alert("You lost!")
+            console.log('Player selected: ', PlayerSelection);
         } else {
             computerScore += 1
             alert("You lost!")
