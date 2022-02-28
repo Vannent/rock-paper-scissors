@@ -1,18 +1,35 @@
-let playerScore = 0
-let computerScore = 0
+let playerScore = 0;
+let computerScore = 0;
 
-for (let i = 0; i < 5; i++) {
+const rockSelection = document.getElementById("rock").addEventListener("click", () => clickOn("rock"));
+const paperSelection = document.getElementById("paper").addEventListener("click",() => clickOn("paper"));
+const scissorsSelection = document.getElementById("scissors").addEventListener("click", () => clickOn("scissors"));
+const playerScoreTrack = document.getElementById("player-score");
+const computerScoreTrack = document.getElementById("computerscore");
+
+
+function clickOn(playerSelection) {
+    console.log("Player selected: ", playerSelection);
+    return playerSelection;
+}
+
+function computerPlay() {
+    let computerOptions = ["rock", "paper", "scissors"];
+    let computerChoice = computerOptions[Math.floor(Math.random() * computerOptions.length)];
+    return computerChoice;
+}
+
+
+
+
+/*  for (let i = 0; i < 5; i++) {
     function computerPlay() {
     let computerOptions = ["rock", "paper", "scissors"];
     let computerChoice = computerOptions[Math.floor(Math.random() * computerOptions.length)];
     console.log('Computer selected: ' + computerChoice)
     return computerChoice
     }
-
-    let PlayerSelection = prompt("Rock, Paper or Scissors?").toLowerCase();
-    
-    if (PlayerSelection!= undefined && PlayerSelection === "paper", "scissors", "rock") {
-        if (PlayerSelection === "rock" && computerPlay() === "scissors") {
+    if (PlayerSelection === "rock" && computerPlay() === "scissors") {
             playerScore += 1
             alert("You won!")
             console.log('Player selected: ', PlayerSelection);
@@ -50,9 +67,6 @@ for (let i = 0; i < 5; i++) {
             alert("You lost!")
             console.log('Player selected: ', PlayerSelection);
         }
-    } else {
-        alert("You need to make a correct selection.");
-    }
 }   
 
 if (playerScore >= 3) {
@@ -61,3 +75,6 @@ if (playerScore >= 3) {
     alert("Unfortunately, you've lost! Try again!")
 }
 console.log(playerScore, computerScore)
+
+playerScoreTrack.textContent = playerScore;
+computerScoreTrack.textContent = computerScore; */
