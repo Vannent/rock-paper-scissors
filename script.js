@@ -11,7 +11,6 @@ const computerScoreTrack = document.getElementById("computerscore");
 
 
 function clickOn(playerSelection) {
-    console.log("Player selected: ", playerSelection);
     playRound(playerSelection, computerSelection);
     if (playerScore >= 3) {
         alert("Congratulations, you've won!")
@@ -37,34 +36,34 @@ function playRound(playerSelection, computerSelection) {
     computerSelection = computerPlay();
     if (playerSelection == "rock" && computerSelection == "scissors") {
         playerScore += 1;
-        console.log(playerSelection, computerSelection);
+        console.log("Player selected: ", playerSelection, "Computer selected: ", computerSelection);
     } else if (playerSelection == "scissors" && computerSelection == "paper") {
         playerScore += 1;
-        console.log(playerSelection, computerSelection);
+        console.log("Player selected: ", playerSelection, "Computer selected: ", computerSelection);
     } else if (playerSelection == "paper" && computerSelection == "rock") {
         playerScore += 1;
-        console.log(playerSelection, computerSelection);
-    } else if (playerSelection == "paper" && computerSelection == "paper") {
+        console.log("Player selected: ", playerSelection, computerSelection);
+    } else if (playerSelection == "paper" && "Computer selected: ", computerSelection == "paper") {
         alert("Draw!");
-        console.log(playerSelection, computerSelection);
-    } else if (playerSelection == "rock" && computerSelection == "rock") {
+        console.log("Player selected: ", playerSelection, computerSelection);
+    } else if (playerSelection == "rock" && "Computer selected: ", computerSelection == "rock") {
         alert("Draw!");
-        console.log(playerSelection, computerSelection);
-    } else if (playerSelection == "scissors" && computerSelection == "scissors") {
+        console.log("Player selected: ", playerSelection, computerSelection);
+    } else if (playerSelection == "scissors" && "Computer selected: ", computerSelection == "scissors") {
         alert("Draw!");
-        console.log(playerSelection, computerSelection);
-    } else if (playerSelection == "paper" && computerSelection == "scissors") {
+        console.log("Player selected: ", playerSelection, computerSelection);
+    } else if (playerSelection == "paper" && "Computer selected: ", computerSelection == "scissors") {
         computerScore += 1;
-        console.log(playerSelection, computerSelection);
+        console.log("Player selected: ", playerSelection, "Computer selected: ", computerSelection);
     } else if (playerSelection == "scissors" && computerSelection == "rock") {
         computerScore += 1;
-        console.log(playerSelection, computerSelection);
+        console.log("Player selected: ", playerSelection, "Computer selected: ", computerSelection);
     } else if (playerSelection == "rock" && computerSelection == "paper") {
         computerScore += 1;
-        console.log(playerSelection, computerSelection);
+        console.log("Player selected: ", playerSelection, "Computer selected: ", computerSelection);
     } else {
         computerScore += 1;
-        console.log(playerSelection, computerSelection);
+        console.log("Player selected: ", playerSelection, "Computer selected: ", computerSelection);
     }
 }
 
