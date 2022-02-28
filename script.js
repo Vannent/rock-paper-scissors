@@ -42,16 +42,16 @@ function playRound(playerSelection, computerSelection) {
         console.log("Player selected: ", playerSelection, "Computer selected: ", computerSelection);
     } else if (playerSelection == "paper" && computerSelection == "rock") {
         playerScore += 1;
-        console.log("Player selected: ", playerSelection, computerSelection);
-    } else if (playerSelection == "paper" && "Computer selected: ", computerSelection == "paper") {
+        console.log("Player selected: ", playerSelection,  "Computer selected: ", computerSelection);
+    } else if (playerSelection == "paper" && computerSelection == "paper") {
         alert("Draw!");
-        console.log("Player selected: ", playerSelection, computerSelection);
-    } else if (playerSelection == "rock" && "Computer selected: ", computerSelection == "rock") {
+        console.log("Player selected: ", playerSelection, "Computer selected: ", computerSelection);
+    } else if (playerSelection == "rock" && computerSelection == "rock") {
         alert("Draw!");
-        console.log("Player selected: ", playerSelection, computerSelection);
-    } else if (playerSelection == "scissors" && "Computer selected: ", computerSelection == "scissors") {
+        console.log("Player selected: ", playerSelection,  "Computer selected: ", computerSelection);
+    } else if (playerSelection == "scissors" && computerSelection == "scissors") {
         alert("Draw!");
-        console.log("Player selected: ", playerSelection, computerSelection);
+        console.log("Player selected: ", playerSelection,  "Computer selected: ", computerSelection);
     } else if (playerSelection == "paper" && "Computer selected: ", computerSelection == "scissors") {
         computerScore += 1;
         console.log("Player selected: ", playerSelection, "Computer selected: ", computerSelection);
